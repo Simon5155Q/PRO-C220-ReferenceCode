@@ -4,7 +4,7 @@ const server = require("http").Server(app);
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 var nodemailer = require("nodemailer");
-var transporter = nodemailer.createTransporter({
+var transporter = nodemailer.createTransport({
     "port": 587,
     "host": "smtp.gmail.com",
     "auth": {
